@@ -78,15 +78,16 @@ body {
 }
 
 .offcanvas-btn {
+    font-size: 2em;
     z-index: 100000;
     position: fixed;
     bottom: 8%;
     right: 3%;
     height: 70px;
     width: 70px;
-    background: lightcyan;
+    background: rgb(213, 250, 250);
     border-radius: 50%;
-    border: 6px inset gray;
+    border: 6px inset lightgray;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,14 +119,15 @@ body {
 
 .offcanvas-aside img {
     border-radius: 50%;
-    height: 250px;
-    margin-bottom: 40px;
-    margin-top: -80px;
+    height: 200px;
+    margin-bottom: 20px;
+    margin-top: -40px;
     border: outset lightblue 10px;
 }
 
 .offcanvas-aside input,
 textarea {
+    margin-bottom: 25px;
     padding: 5px;
     border: lightblue 5px outset;
     text-align: center;
@@ -439,6 +441,15 @@ header.masthead .intro-text .intro-heading {
     opacity: 0.3;
 }
 
+.portfolio-modal img {
+    border: lightcyan 10px outset;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
 .portfolio-modal .close-modal .lr {
     /* Safari and Chrome */
     z-index: 1051;
@@ -663,7 +674,7 @@ header.masthead .intro-text .intro-heading {
 .team-member img {
     width: 225px;
     height: 225px;
-    border: 7px solid white;
+    border: 10px outset white;
 }
 
 .team-member h4 {
@@ -678,6 +689,7 @@ header.masthead .intro-text .intro-heading {
 
 .about-description {
     max-width: 80%;
+    font-size: 1.3em;
 }
 
 @media (max-width: 800px) {
