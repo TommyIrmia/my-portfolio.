@@ -1,0 +1,319 @@
+* {
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+body {
+    margin: 0;
+    font-family: 'Goudy Bookletter 1911', serif;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+header {
+    height: 33%;
+    margin-top: -40px;
+    margin-bottom: -40px;
+    text-align: left;
+    background-image: url("../img/bookshop.png");
+    background-size: cover;
+    mix-blend-mode: multiply;
+    font-size: 1.5em;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+header h1 {
+    text-shadow: beige 2px 2px 0px, #9C9C9C 4px 4px 0px;
+    position: relative;
+    top: 70px;
+    right: 25px;
+}
+
+header h2 {
+    text-shadow: beige 2px 2px 0px, #9C9C9C 4px 4px 0px;
+    position: relative;
+    left: 45px;
+    align-self: flex-end;
+}
+
+.next-page {
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: -5px;
+}
+
+.next-page button {
+    background-color: #686767;
+    color: white;
+    border-radius: 20px;
+    height: 40px;
+}
+
+.books-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    background-color: pink;
+    height: 50%;
+    width: 90%;
+    font-size: 1.2em;
+    box-shadow: 8px 0px 0px 0px #DCD0C0, 0px 8px 0px 0px #B1938B, -8px 0px 0px 0px #4E4E56, 0px 0px 0px 8px #ee8f8a, 5px 5px 15px 5px rgb(228, 230, 231);
+}
+
+th {
+    border: black 2px solid;
+    height: 50px;
+    background-color: rgb(134, 68, 68);
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+tr:nth-child(even) {
+    background-image: linear-gradient(to left, rgb(218, 162, 195), white);
+}
+
+tr:nth-child(odd) {
+    background-image: linear-gradient(to left, rgb(218, 162, 195), rgb(0, 0, 0));
+    color: white;
+}
+
+th span {
+    font-size: 0.5em;
+}
+
+td {
+    border: black 2px solid;
+    height: 30px;
+    text-align: center;
+}
+
+.action {
+    color: white;
+    border-radius: 50%;
+    height: 40px;
+    border: white 2px outset;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.read-btn {
+    background-color: rgb(53, 164, 228);
+}
+
+.update-btn {
+    background-color: rgb(47, 128, 47);
+}
+
+.delete-btn {
+    background-color: rgb(163, 12, 12);
+}
+
+.add {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-radius: 50%;
+}
+
+.add-book {
+    min-width: 300px;
+    position: relative;
+    top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-image: radial-gradient(white, pink);
+    padding: 10px;
+    border-radius: 10px;
+    border: #ee8f8a 5px outset;
+}
+
+.add-book h3 {
+    margin: 0px;
+    height: 50%;
+}
+
+h3 button {
+    cursor: pointer;
+    width: 50%;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #ee8f8a;
+    color: white;
+}
+
+.inputs-container {
+    height: 50%;
+    width: 100%;
+    margin-top: 15px;
+}
+
+input {
+    color: white;
+    background-color: rgba(53, 53, 53, 0.986);
+    margin-bottom: 20px;
+    border-radius: 40px;
+    text-align: center;
+    height: 30px;
+}
+
+.modal {
+    animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    background-color: lightblue;
+    padding: 5px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    left: 50%;
+    height: 95%;
+    min-width: 300px;
+    text-align: center;
+    border: 10px outset rgb(211, 203, 203);
+    border-radius: 40px;
+    -webkit-animation: ;
+}
+
+.close {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.modal h5,
+.modal h6 {
+    font-size: 1.1rem;
+    height: 5%;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal h6 {
+    width: 45%;
+    font-size: 1rem;
+    margin-top: -10px;
+}
+
+h6 div,
+h6 button {
+    color: white;
+    margin: 0px 3px;
+    border: 1px black solid;
+    width: 20px;
+    font-weight: bold;
+    border-radius: 10%;
+}
+
+.red {
+    border-radius: 50%;
+    background-color: red;
+}
+
+.green {
+    border-radius: 50%;
+    background-color: green;
+}
+
+.modal p {
+    margin-top: -10px;
+    padding: 10px;
+    overflow: scroll;
+    height: 40%;
+    background-color: beige;
+    border-radius: 40px;
+}
+
+.rating {
+    padding: 0px 3px;
+    color: black;
+    cursor: pointer;
+}
+
+.pic img {
+    height: 250px;
+    margin-top: 10px;
+    border-radius: 40px;
+    border: 5px white solid;
+}
+
+footer {
+    font-size: 1.2em;
+    font-weight: bold;
+    height: 8%;
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(248, 251, 255);
+    border-top: 10px inset rgb(194, 180, 180);
+    border-bottom: 10px inset rgb(148, 147, 146);
+    box-shadow: 0px 0px 0px 5px #9c6c6c, inset 0px 10px 27px -8px #a34747, inset 0px -10px 27px -8px #904e4e, 50px 38px 0px -30px rgba(180, 120, 120, 0);
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes scale-up-center {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+@keyframes scale-out-center {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0);
+        opacity: 1;
+    }
+}
+
+@keyframes scale-in-center {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}

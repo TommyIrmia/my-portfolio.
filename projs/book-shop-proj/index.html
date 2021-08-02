@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Tale Time - BookShop</title>
+</head>
+
+<body onload="onInit()">
+
+    <header>
+        <h1>Welcome to Tale Time</h1>
+        <h2>The BookShop</h2>
+    </header>
+
+    <div class="next-page">
+        <button onclick="onNextPage()">Next Page</button>
+    </div>
+
+    <section class="books-container"></section>
+    <section class="add-book">
+        <h3><button onclick="onCreateBook()">Create new book</button> </h3>
+        <div class="inputs-container" hidden>
+            <button onclick="onCloseAdd()" class="close">Close</button>
+            <input name="book-name" type="text" placeholder="Book Name" required>
+            <input name="book-price" type="text" placeholder="Book Price" required>
+            <input name="book-img" type="url" placeholder="Cover URL">
+            <button class="add" onclick="onAddBook()">+</button>
+        </div>
+    </section>
+
+    <div class="modal" hidden>
+        <button onclick="onCloseModal()" class="close">Close</button>
+        <h5></h5>
+        <div class="container">
+            <h6 class="price"></h6>
+            <h6 class="rate-container">
+            </h6>
+        </div>
+        <p></p>
+        <hr/>
+        <div class="pic"></div>
+    </div>
+
+    <hr/>
+    <footer> ©All rights reserved to 'Tale Time' - by Tommy Irmia©</footer>
+
+    <script src=js/util-service.js></script>
+    <script src=js/storage-service.js></script>
+    <script src=js/book-shop-service.js></script>
+    <script src=js/book-shop-controller.js></script>
+</body>
+
+</html>

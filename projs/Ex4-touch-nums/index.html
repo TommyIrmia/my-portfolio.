@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <title>Touch The Numbers</title>
+</head>
+
+<body onload="init()">
+    <div class="header">
+        <h1>Touch The Numbers 2.0</h1>
+        <div class="clock">00:00:00</div>
+    </div>
+    <div class="diff-level">Select diffculty :
+
+        <button data-row="3" onclick="clickedDiff(this)" class="but1">Easy🥱 (3*3)</button>
+        <button data-row="4" onclick="clickedDiff(this)" class="but2">Medium😉 (4*4)</button>
+        <button data-row="5" onclick="clickedDiff(this)" class="but3">Hard😱 (5*5)</button>
+        <button data-row="6" onclick="clickedDiff(this)" class="but4">MAD!😵 (6*6)</button>
+    </div>
+
+    <div class="win">YOU WON!!! GOODJOB! <br/> play again? select diffculty!</div>
+
+    <div>
+        <table border="1px" class="game-board">
+        </table>
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

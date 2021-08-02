@@ -1,0 +1,102 @@
+body {
+    background-color: black;
+    color: black;
+    text-align: center;
+    margin: auto;
+}
+
+.modal {
+    background-color: aquamarine;
+    margin: auto;
+    margin-top: 10px;
+    width: 200px;
+    height: 30px;
+    border: 10px gray inset;
+    text-align: left;
+    position: relative;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: none;
+}
+
+.modal button {
+    background-color: black;
+    color: white;
+    margin-left: 50%;
+    position: absolute;
+    right: 10px;
+    margin-top: 5px;
+}
+
+.modal button:hover {
+    background-color: white;
+    color: black;
+    transition: 1s;
+}
+
+h1 {
+    color: aquamarine;
+    background-color: rgba(209, 209, 209, 0.5);
+    border-radius: 30px;
+    width: 400px;
+    margin: auto;
+    border: 10px aquamarine inset;
+    padding: 5px;
+}
+
+h2 {
+    color: aqua;
+    background-color: rgba(255, 255, 255, 0.527);
+    width: 200px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 10px aquamarine inset;
+}
+
+.cell img {
+    width: 25px;
+    height: 35px;
+}
+
+.cell {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.board-container {
+    background-image: linear-gradient(aquamarine, lightgray, aquamarine);
+    margin: auto;
+    width: 450px;
+    height: 450px;
+    border: 20px gray outset;
+}
+
+.formLine {
+    margin: 10px;
+    padding: 10px;
+    background-color: cornflowerblue;
+}
+
+.wall {
+    border: black 3px solid;
+}
+
+.pacman-up {
+    transform: rotate(90deg);
+}
+
+.pacman-down {
+    transform: rotate(270deg);
+}
+
+.pacman-right {
+    transform: rotate(180deg);
+}
+
+.pacman-left {
+    transform: rotate(360deg);
+}
