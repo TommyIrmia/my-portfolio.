@@ -29,19 +29,20 @@
     <div class="offcanvas-btn" onClick="openCanvas()">
         <i class="fa fa-comment" aria-hidden="true"></i>
     </div>
-    <aside class="offcanvas-aside bg-success">
+    <aside class="offcanvas-aside">
 
         <section id="contact d-flex flex-column bd-highlight mb-3">
-            <h4 class="p-2">Contact Me</h4>
-            <h6 class="p-2">Send to :</h6>
+            <img src="img/team/me.jpg">
+            <h4 class="">Contact Me</h4>
+            <h6 class="mt-5">Send to :</h6>
             <input class="form-control p-2 mail" type="text" placeholder="tommyirmia@gmail.com" disabled>
-            <h6 class="p-2">Subject:</h6>
+            <h6 class="mt-5">Subject:</h6>
             <input class="form-control p-2 form-control-lg subject-input" type="text" placeholder="Type subject here" aria-label=".form-control-lg example">
-            <h6 class="p-2">Message body :</h6>
+            <h6 class="mt-5">Message body :</h6>
             <div class="form-floating p-2">
-                <textarea class="form-control p-2 message-input" placeholder="Type nessage text here" id="floatingTextarea2" style="height: 400px"></textarea>
+                <textarea class="form-control p-2 message-input" placeholder="Type message text here" id="floatingTextarea2" style="height: 400px"></textarea>
             </div>
-            <button type="button" class="btn btn-primary" onclick="onSubmit()">Submit</button>
+            <button type="button" class="btn btn-lg btn-info " onclick="onSubmit()">Submit</button>
         </section>
 
     </aside>
@@ -59,7 +60,7 @@
                         <a class="nav-link js-scroll-trigger" href="#services">Specialities</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+                        <a class="nav-link js-scroll-trigger" href="#portfolio">Projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#me">Me</a>
@@ -89,139 +90,57 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Specialities</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 class="section-subheading ">The things I can do for you!</h3>
                 </div>
             </div>
             <div class="row text-center">
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-circle fa-stack-2x text-success"></i>
               <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
             </span>
                     <h4 class="service-heading">E-Commerce</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <p class="text-muted">For consumers, professionals, and the large category of people who are both, eCommerce websites represent an increasingly important part of the business and shopping landscape. Across industries, it’s become a normal part of how people
+                        make purchases and how companies do business. </p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-circle fa-stack-2x text-success"></i>
               <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
             </span>
                     <h4 class="service-heading">Responsive Design</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <p class="text-muted">Responsive design is a graphic user interface (GUI) design approach used to create content that adjusts smoothly to various screen sizes. I will use size elements in relative units (%) and apply media queries, so your required designs
+                        can automatically adapt to the browser space to ensure content consistency across devices.</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-circle fa-stack-2x text-success"></i>
               <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
             </span>
                     <h4 class="service-heading">Web Security</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <p class="text-muted">Websites and web applications are just as prone to security breaches as physical homes, stores, and government locations. Unfortunately, cybercrime happens every day, and great web security measures are needed to protect websites and
+                        web applications from becoming compromised.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Portfolio Grid -->
-    <section class="bg-light" id="portfolio">
+    <section id="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Projects</h2>
-                    <h3 class="section-subheading text-muted">My Coding Academy Projects.</h3>
+                    <h3 class="section-subheading">My Coding Academy Projects.</h3>
                 </div>
             </div>
-            <div class="row grid-container">
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio/minesweeper.png" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Sprint 1</h4>
-                        <p class="text-muted">Games</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Explore</h4>
-                        <p class="text-muted">Graphic Design</p>
-                    </div>
-                </div>
-                <!-- <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Finish</h4>
-                        <p class="text-muted">Identity</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Lines</h4>
-                        <p class="text-muted">Branding</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Southwest</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Window</h4>
-                        <p class="text-muted">Photography</p>
-                    </div>
-                </div> -->
-            </div>
+            <div class="row grid-container"></div>
         </div>
     </section>
 
 
     <!-- Me -->
-    <section class="bg-light" id="me" style="padding: 0px;">
+    <section id="me" style="padding: 0px;">
         <div class="row">
             <div class="col-sm-4">
                 <div class="team-member">
@@ -248,7 +167,7 @@
                 </div>
             </div>
             <div class="col-sm-8 flex-align-center">
-                <p class="large text-muted  about-description"> a Full-Stack developing student at Coding Academy. • Has managerial experience, training and leading staff in challenging conditions. • Responsible, organized, hardworking, reliable, with the ability to work under pressure and the ability
+                <p class="large about-description"> a Full-Stack developing student at Coding Academy. • Has managerial experience, training and leading staff in challenging conditions. • Responsible, organized, hardworking, reliable, with the ability to work under pressure and the ability
                     to absorb and process information quickly.<br> 27 Years old, Lives in Tal-el.
                 </p>
             </div>
@@ -258,7 +177,7 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container">
+        <div class="footer">
             <div class="row">
                 <div class="col-md-4 flex-align-center">
                     <a href="http://coding-academy.org" target="_blank">
@@ -314,8 +233,8 @@
                         <div class="col-lg-8 mx-auto">
                             <div class="modal-body">
                                 <h2 class="proj-name"></h2>
+                                <p class="item-intro proj-title"></p>
                                 <h4><a class="proj-url" href target=_blank>To visit - click HERE</a></h4>
-                                <p class="item-intro text-muted proj-title"></p>
                                 <img class="img-fluid d-block mx-auto proj-img" src="img/portfolio/minesweeper.png" alt="">
                                 <p class="proj-desc"></p>
                                 <ul class="list-inline">

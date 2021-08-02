@@ -1,4 +1,5 @@
 body {
+    background-color: rgb(191, 240, 191);
     overflow-x: hidden;
     font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -8,14 +9,14 @@ p {
 }
 
 a {
-    color: #fed136;
+    color: black;
 }
 
 a.active,
 a:active,
 a:focus,
 a:hover {
-    color: #fec503;
+    color: #8d8a7f;
 }
 
 h1,
@@ -34,13 +35,13 @@ section {
 }
 
 section h2.section-heading {
-    font-size: 40px;
-    margin-top: 0;
+    font-size: 70px;
+    margin-top: -30px;
     margin-bottom: 15px;
 }
 
 section h3.section-subheading {
-    font-size: 16px;
+    font-size: 25px;
     font-weight: 400;
     font-style: italic;
     margin-bottom: 75px;
@@ -55,12 +56,12 @@ section h3.section-subheading {
 }
 
 ::-moz-selection {
-    background: #fed136;
+    background: lightcyan;
     text-shadow: none;
 }
 
 ::selection {
-    background: #fed136;
+    background: lightcyan;
     text-shadow: none;
 }
 
@@ -73,7 +74,7 @@ img::-moz-selection {
 }
 
 body {
-    -webkit-tap-highlight-color: #fed136;
+    -webkit-tap-highlight-color: lightcyan;
 }
 
 .offcanvas-btn {
@@ -81,10 +82,11 @@ body {
     position: fixed;
     bottom: 8%;
     right: 3%;
-    height: 50px;
-    width: 50px;
-    background: #e2cb36;
+    height: 70px;
+    width: 70px;
+    background: lightcyan;
     border-radius: 50%;
+    border: 6px inset gray;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,25 +100,41 @@ body {
 }
 
 .offcanvas-aside {
+    text-align: center;
+    background-color: lightcyan;
+    border-left: black 5px solid;
+    padding: 10px;
     position: fixed;
     height: 100%;
-    background: red;
     width: 80vw;
     right: -80vw;
     z-index: 10;
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: space-around;
     justify-content: space-around;
 }
 
 .offcanvas-aside img {
     border-radius: 50%;
+    height: 250px;
+    margin-bottom: 40px;
+    margin-top: -80px;
+    border: outset lightblue 10px;
 }
 
-.offcanvas-aside p {
+.offcanvas-aside input,
+textarea {
+    padding: 5px;
+    border: lightblue 5px outset;
     text-align: center;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.message-input {
+    padding: 5px;
+    border: lightblue 5px outset;
 }
 
 .offcanvas-aside .offcanvas-content-suffix {
@@ -147,15 +165,15 @@ body {
     right: 0;
     padding: 13px;
     text-transform: uppercase;
-    color: white;
+    color: lightcyan;
     border: 0;
-    background-color: #fed136;
+    background-color: rgb(191, 240, 191);
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
 }
 
 #mainNav .navbar-brand {
-    color: #fed136;
+    color: rgb(191, 240, 191);
     font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
 }
 
@@ -163,7 +181,7 @@ body {
 #mainNav .navbar-brand:active,
 #mainNav .navbar-brand:focus,
 #mainNav .navbar-brand:hover {
-    color: #fec503;
+    color: rgb(191, 240, 191);
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -171,14 +189,14 @@ body {
     font-weight: 400;
     padding: 0.75em 0;
     letter-spacing: 1px;
-    color: white;
+    color: rgb(170, 241, 170);
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active,
 #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: #fed136;
+    color: white;
 }
 
 @media (min-width: 992px) {
@@ -213,7 +231,7 @@ body {
 
 header.masthead {
     text-align: center;
-    color: white;
+    color: lightcyan;
     background-image: url("../img/header-bg.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -294,7 +312,7 @@ header.masthead .intro-text .intro-heading {
     -moz-transition: all ease 0.5s;
     transition: all ease 0.5s;
     opacity: 0;
-    background: rgba(254, 209, 54, 0.9);
+    background: rgb(209, 255, 255);
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
@@ -309,7 +327,7 @@ header.masthead .intro-text .intro-heading {
     height: 20px;
     margin-top: -12px;
     text-align: center;
-    color: white;
+    color: lightgreen;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
@@ -326,7 +344,7 @@ header.masthead .intro-text .intro-heading {
     margin: 0 auto;
     padding: 25px;
     text-align: center;
-    background-color: white;
+    background-color: lightcyan;
 }
 
 #portfolio .portfolio-item .portfolio-caption h4 {
@@ -358,6 +376,7 @@ header.masthead .intro-text .intro-heading {
 }
 
 .portfolio-modal .modal-content {
+    background-color: rgb(192, 240, 240);
     min-height: 100%;
     padding: 100px 0;
     text-align: center;
@@ -373,8 +392,17 @@ header.masthead .intro-text .intro-heading {
     margin-bottom: 15px;
 }
 
+.proj-url {
+    color: #28a745;
+}
+
+.proj-url:hover {
+    color: lightgreen;
+}
+
 .portfolio-modal .modal-content p {
     margin-bottom: 30px;
+    font-size: 1.2em;
 }
 
 .portfolio-modal .modal-content p.item-intro {
@@ -665,6 +693,10 @@ footer {
     text-align: center;
 }
 
+.footer {
+    background-color: lightcyan;
+}
+
 footer span.copyright {
     font-size: 90%;
     line-height: 40px;
@@ -704,7 +736,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:active,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:hover {
-    background-color: #fed136;
+    background-color: #28a745;
 }
 
 .flex-align-center {
@@ -714,14 +746,14 @@ ul.social-buttons li a:hover {
 }
 
 .text-primary {
-    color: #fed136 !important;
+    color: #28a745 !important;
 }
 
 .btn-primary {
     font-weight: 700;
     color: white;
-    border-color: #fed136;
-    background-color: #fed136;
+    border-color: lightgreen;
+    background-color: lightgreen;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
 }
@@ -729,22 +761,22 @@ ul.social-buttons li a:hover {
 .btn-primary.focus,
 .btn-primary:focus {
     color: white;
-    border-color: #b48b01;
-    background-color: #fec503;
+    border-color: #28a745;
+    background-color: #28a745;
 }
 
 .btn-primary:hover {
     color: white;
-    border-color: #f6bf01;
-    background-color: #fec503;
+    border-color: #28a745;
+    background-color: #28a745;
 }
 
 .btn-primary.active,
 .btn-primary:active,
 .open>.btn-primary.dropdown-toggle {
     color: white;
-    border-color: #f6bf01;
-    background-color: #fec503;
+    border-color: #28a745;
+    background-color: #28a745;
 }
 
 .btn-primary.active.focus,
@@ -757,8 +789,8 @@ ul.social-buttons li a:hover {
 .open>.btn-primary.dropdown-toggle:focus,
 .open>.btn-primary.dropdown-toggle:hover {
     color: white;
-    border-color: #b48b01;
-    background-color: #dcab01;
+    border-color: #28a745;
+    background-color: #28a745;
 }
 
 .btn-primary.active,
@@ -776,12 +808,12 @@ ul.social-buttons li a:hover {
 fieldset[disabled] .btn-primary.focus,
 fieldset[disabled] .btn-primary:focus,
 fieldset[disabled] .btn-primary:hover {
-    border-color: #fed136;
-    background-color: #fed136;
+    border-color: rgb(115, 238, 115);
+    background-color: rgb(115, 238, 115);
 }
 
 .btn-primary .badge {
-    color: #fed136;
+    color: rgb(115, 238, 115);
     background-color: white;
 }
 
@@ -791,8 +823,7 @@ fieldset[disabled] .btn-primary:hover {
     padding: 20px 40px;
     border-radius: 3px;
     color: white;
-    border-color: #fed136;
-    background-color: #fed136;
+    background-color: lightgreen;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
 }
@@ -800,22 +831,22 @@ fieldset[disabled] .btn-primary:hover {
 .btn-xl.focus,
 .btn-xl:focus {
     color: white;
-    border-color: #b48b01;
-    background-color: #fec503;
+    border-color: #28a745;
+    background-color: #28a745;
 }
 
 .btn-xl:hover {
     color: white;
-    border-color: #f6bf01;
-    background-color: #fec503;
+    border-color: #28a745;
+    background-color: #28a745;
 }
 
 .btn-xl.active,
 .btn-xl:active,
 .open>.btn-xl.dropdown-toggle {
     color: white;
-    border-color: #f6bf01;
-    background-color: #fec503;
+    border-color: #28a745;
+    background-color: #28a745;
 }
 
 .btn-xl.active.focus,
@@ -828,8 +859,8 @@ fieldset[disabled] .btn-primary:hover {
 .open>.btn-xl.dropdown-toggle:focus,
 .open>.btn-xl.dropdown-toggle:hover {
     color: white;
-    border-color: #b48b01;
-    background-color: #dcab01;
+    border-color: #28a745;
+    background-color: #28a745;
 }
 
 .btn-xl.active,
@@ -847,13 +878,13 @@ fieldset[disabled] .btn-primary:hover {
 fieldset[disabled] .btn-xl.focus,
 fieldset[disabled] .btn-xl:focus,
 fieldset[disabled] .btn-xl:hover {
-    border-color: #fed136;
-    background-color: #fed136;
+    border-color: #28a745;
+    background-color: #28a745;
 }
 
 .btn-xl .badge {
-    color: #fed136;
-    background-color: white;
+    color: #28a745;
+    background-color: #28a745;
 }
 
 
