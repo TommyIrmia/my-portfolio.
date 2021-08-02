@@ -44,3 +44,12 @@ function renderModal(id) {
     $('.proj-category span').text(proj.labels[1]);
 
 }
+
+function onSubmit() {
+    var mailTo = $('.mail').attr('placeholder');
+    var subject = $('.subject-input').val();
+    var message = $('.message-input').val();
+    window.open(`https://mail.google.com/mail/u/0/?fs=1&to=${mailTo}&su=${subject}&body=${message}&tf=cm`,
+        "_blank")
+    openCanvas();
+}
