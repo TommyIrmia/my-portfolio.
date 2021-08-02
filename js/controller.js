@@ -8,7 +8,6 @@ function onInit() {
 
 function renderGrid() {
     var projs = getProjs();
-    console.log(projs);
     var strHTMLs;
     strHTMLs = projs.map(function(proj) {
         var label1 = proj.labels[0]
